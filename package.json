@@ -1,0 +1,27 @@
+{
+  "name": "typescript",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "start": "nodemon --exec ts-node src/main.ts",
+    "deploy": "docker build -t typescriptapp . && docker run --name app_typescript -it -p 5070:5070 typescriptapp",
+    "build": "tsc -b"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/hapi": "^20.1.5",
+    "dotenv": "^10.0.0",
+    "glob": "^7.1.7",
+    "typeorm": "^0.2.34"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.4",
+    "@types/hapi__hapi": "^20.0.9",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.2"
+  }
+}
