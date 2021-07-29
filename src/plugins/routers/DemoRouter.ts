@@ -1,6 +1,6 @@
 import { SO } from '../../datatypes/mapperInterface'
 exports.plugin = {
-    name:"Demo",
+    name:"DemoRouter",
     once:true,
     register: (_server:SO,_options:SO) => {
         _server.route([
@@ -8,7 +8,7 @@ exports.plugin = {
                 path:'/demo',
                 method:["GET"],
                 handler:(_requeest:SO,_h:SO)=>{    
-                    console.log('Hello');
+                    console.log('Interface');
                     return 'Hello'
                 }
             }
