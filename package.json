@@ -16,9 +16,11 @@
     "cron": "^1.8.2",
     "dotenv": "^10.0.0",
     "glob": "^7.1.7",
+    "pg": "^8.7.1",
     "typeorm": "^0.2.35"
   },
   "devDependencies": {
+    "@types/cron": "^1.7.3",
     "@types/glob": "^7.1.4",
     "@types/hapi__hapi": "^20.0.9",
     "nodemon": "^2.0.12",

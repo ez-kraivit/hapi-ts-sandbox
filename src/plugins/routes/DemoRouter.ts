@@ -1,4 +1,4 @@
-import { SO } from '../../datatypes/mapperInterface'
+import { SO } from '../../interface/mainInterface'
 import { Server } from "@hapi/hapi";
 exports.plugin = {
     name:"DemoRouter",

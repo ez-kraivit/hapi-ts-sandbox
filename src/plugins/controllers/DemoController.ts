@@ -1,4 +1,4 @@
-import { SO } from '../../datatypes/mapperInterface'
+import { SO } from '../../interface/mainInterface'
 import { Server } from "@hapi/hapi";
 exports.plugin = {
     name:"DemoController",
@@ -6,7 +6,7 @@ exports.plugin = {
     register: (_server:Server | SO,_options:SO) => {
         _server.app.DemoController = class DemoController {
             public async getHello() {
-                return 'Hello'
+                return 'Kraivit Mongkhonsakunrit'
             }
         }
 
