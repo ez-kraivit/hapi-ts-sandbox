@@ -1,7 +1,7 @@
 export interface SO extends SSO {}
 
 export interface SSO {
-    [key:string]: | OT | AO | AS | any
+    [key:string]: | OT | AO | AS
 }
 
 export interface OT { 
