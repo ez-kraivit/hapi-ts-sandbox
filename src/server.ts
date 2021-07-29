@@ -27,7 +27,7 @@ export const connectStart = async function(synchronize:boolean = false):Promise<
         port: 5432,
         username: "root",
         password: "12345678",
-        database: "weassess",
+        database: "we",
         entities: [
             Users
         ],
