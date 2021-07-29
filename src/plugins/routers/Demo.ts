@@ -7,7 +7,8 @@ exports.plugin = {
             {
                 path:'/demo',
                 method:["GET"],
-                handler:(_requeest:SO,_h:SO)=>{                    
+                handler:(_requeest:SO,_h:SO)=>{    
+                    console.log('Hello');
                     return 'Hello'
                 }
             }

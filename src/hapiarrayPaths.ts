@@ -1,3 +1,5 @@
 import * as Glob from 'glob'
-const hapiarrayPaths: Array<string> = Glob.sync("./src/plugins/routers/**/*.js")
-export default hapiarrayPaths.map((ts:string) => require(`.${ts}`))
+const hapiarrayPathsRouter: Array<string> = Glob.sync('./src/plugins/routers/**/*.@(js|ts)')
+console.log(hapiarrayPathsRouter);
+
+export default hapiarrayPathsRouter.map((ts:string) => require(`.${ts}`))
