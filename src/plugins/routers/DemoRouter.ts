@@ -8,7 +8,7 @@ exports.plugin = {
                 path:'/demo',
                 method:["GET"],
                 handler:(_requeest:SO,_h:SO)=>{    
-                    console.log('Interface');
+                    console.log(_server.app._k1);
                     return 'Hello'
                 }
             }

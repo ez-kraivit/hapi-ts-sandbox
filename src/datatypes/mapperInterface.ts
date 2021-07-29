@@ -3,6 +3,7 @@ export interface SO extends SSO {}
 export interface SSO {
     [key:string]: | OT | AO | AS 
     route : any
+    app? : any
 }
 
 export interface OT { 
