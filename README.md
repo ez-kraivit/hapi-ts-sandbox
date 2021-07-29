@@ -16,5 +16,5 @@
 
 ## Docker Run
 ```sh
-    docker run --name app_typescript -it -p 8080:8080 typescriptapp
+    docker run --name app_typescript -it -p 5070:5070 typescriptapp
 ```

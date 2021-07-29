@@ -1,4 +1,4 @@
-import { SO } from '../../DataType/mapper'
+import { SO } from '../../datatypes/mapperInterface'
 exports.plugin = {
     name:"Demo",
     once:true,
