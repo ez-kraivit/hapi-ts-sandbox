@@ -14,4 +14,4 @@ export type Types = | boolean | string | number
 
 export interface AS extends Array<Types> {}
 
-export interface AO extends Array<OT>{}
+export interface AO extends Array<OT | Types>{}

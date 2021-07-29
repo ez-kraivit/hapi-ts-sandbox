@@ -1,6 +1,6 @@
 import { Server } from "@hapi/hapi";
-import hapiarrayPaths from '../hapiarrayPaths'
+import hapiarrayPaths , { afterRegister } from '../hapiarrayPaths'
 export const hapiRegister =  async function(_server:any): Promise<Server> { 
-    await _server.register(hapiarrayPaths)
+    await _server.register(hapiarrayPaths).then(()=>afterRegister())
     return _server
 }

@@ -5,6 +5,7 @@ import { hapiRegister } from './coreplugins/hapiRegister'
 import { hapiApp } from './coreplugins/hapiApp'
 import { createConnection } from "typeorm"
 import { Users } from './migration/index';
+
 export let server: Server | any;
 
 export const init = async function (_options?: SO): Promise<Server> {
@@ -15,6 +16,7 @@ export const init = async function (_options?: SO): Promise<Server> {
 
     await hapiRegister(server)
     await hapiApp(server)
+
     return server
 }
 
@@ -25,11 +27,11 @@ export const connectStart = async function():Promise<void>{
         port: 5432,
         username: "root",
         password: "12345678",
-        database: "we",
+        database: "weassess",
         entities: [
             Users
         ],
-        synchronize: true, // { force: true = true }
+        synchronize: false, // { force: true = true }
         logging: false
     })
 }
