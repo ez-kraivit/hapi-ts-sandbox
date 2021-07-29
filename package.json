@@ -13,9 +13,10 @@
   "license": "MIT",
   "dependencies": {
     "@hapi/hapi": "^20.1.5",
+    "cron": "^1.8.2",
     "dotenv": "^10.0.0",
     "glob": "^7.1.7",
-    "typeorm": "^0.2.34"
+    "typeorm": "^0.2.35"
   },
   "devDependencies": {
     "@types/glob": "^7.1.4",

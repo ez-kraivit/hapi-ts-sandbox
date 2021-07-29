@@ -1,15 +1,15 @@
 import { SO } from '../../datatypes/mapperInterface'
+import { Server } from "@hapi/hapi";
 exports.plugin = {
     name:"DemoRouter",
     once:true,
-    register: (_server:SO,_options:SO) => {
+    register: (_server:Server | SO,_options:SO) => {
         _server.route([
             {
                 path:'/demo',
                 method:["GET"],
-                handler:(_requeest:SO,_h:SO)=>{    
-                    console.log(_server.app._k1);
-                    return 'Hello'
+                handler:(_requeest:SO,_h:SO)=>{ 
+                    return new _server.app.DemoController().getHello()
                 }
             }
         ])
