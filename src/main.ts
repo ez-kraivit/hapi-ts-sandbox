@@ -1,2 +1,2 @@
-import { init, start , connectStart } from "./server";
-connectStart().then(()=> init().then(() => start()))
+import { init, start ,  } from "./server";
+init().then(() => start())

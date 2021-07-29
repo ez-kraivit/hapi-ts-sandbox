@@ -6,3 +6,4 @@ tmp/
 temp/
 .env
 build
+src/config/*.json

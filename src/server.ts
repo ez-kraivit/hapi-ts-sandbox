@@ -20,7 +20,7 @@ export const init = async function (_options?: SO): Promise<Server> {
     return server
 }
 
-export const connectStart = async function():Promise<void>{
+export const connectStart = async function(synchronize:boolean = false):Promise<void>{
     createConnection({
         type: "postgres",
         host: "0.0.0.0",
@@ -31,7 +31,7 @@ export const connectStart = async function():Promise<void>{
         entities: [
             Users
         ],
-        synchronize: false, // { force: true = true }
+        synchronize: synchronize, // { force: true = true }
         logging: false
     })
 }
